@@ -17,17 +17,22 @@ Aplicacao em Java com Spring Boot que realiza saque em conta corrente, valida sa
 docker compose up -d
 ```
 
-2. Inicie a aplicacao Spring:
+2. Entre na pasta que contem o `pom.xml` e inicie a aplicacao Spring.
+
+Recomendado (nao precisa ter Maven instalado; baixa o Maven na primeira execucao):
 
 ```bash
+chmod +x ./mvnw   # so na primeira vez, se precisar
 ./mvnw spring-boot:run
 ```
 
-Se voce nao tiver `mvnw` no projeto, rode:
+Alternativa, se voce tiver Maven instalado (por exemplo `brew install maven`):
 
 ```bash
 mvn spring-boot:run
 ```
+
+Se aparecer `zsh: command not found: mvn`, use sempre `./mvnw` a partir da pasta do projeto.
 
 ## Endpoint de saque
 
