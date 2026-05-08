@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: saque-app
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+app:
+  rabbit:
+    exchange: saque.exchange
+    queue: saque.queue
+    routing-key: saque.realizado
